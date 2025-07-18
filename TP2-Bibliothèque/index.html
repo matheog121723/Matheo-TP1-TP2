@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="Ajouter un livre">
+      <h2>Ajouter un livre</h2>
+
+      <form method="get" id="add-form">
+        <input type="text" id="add-title" placeholder="Titre"/>
+        <input type="text" id="add-author" placeholder="Author"/>
+        <input type="text" id="add-year" placeholder="Year"/>
+        <button>Ajouter</button>
+      </form>
+      <p id="add-result"></p>
+    </section>
+
+    <section id="Chercher un livre">
+      <h2>Rechercher un livre</h2>
+
+      <form method="get" id="search-form">
+        <input type="text" id="search-title" placeholder="Titre"/>
+        <button>Rechercher</button>
+      </form>
+      <p id="search-result"></p>
+    </section>
+
+    <section id="emprunt">
+    <h2>Emprunter ou retourner un livre</h2>
+
+    <form method="get" id="borrow-form">
+    <input type="text" id="borrow-book" placeholder="Titre du livre">
+    <button>Emprunter</button>
+    <p id="borrow-result"></p>
+    </form>
+
+    <form id="return-form">
+    <input type="text" id="return-book" placeholder="Titre à retourner" required />
+    <button type="submit">Retourner</button>
+    </form>
+    <div id="return-result"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
